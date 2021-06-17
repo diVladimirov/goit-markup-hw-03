@@ -49,16 +49,19 @@ ul {
   margin-right: auto;
   outline: 2px solid tomato;
 }
+
+.main-nav {
+  display: flex;
+  align-items: center;
+}
 /* LOGO */
 .logo {
   display: inline-block;
   color: var(--logo-text-color);
-  font-family: "Raleway";
-  font-weight: bold;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
   font-size: 26px;
   line-height: 1.2;
-  padding-top: 24px;
-  padding-bottom: 25px;
 }
 
 .logo-accent {
@@ -82,13 +85,18 @@ ul {
 
 /* PAGE-NAV */
 .page-nav .link {
-  display: inline-block;
   color: var(--secondary-text-color);
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  padding: 32px 0;
+}
+.page-nav {
+  display: flex;
+  margin-left: 93px;
+}
+.page-nav .page-nav-list:not(:last-child) {
+  margin-right: 50px;
 }
 
 .page-nav .link:hover,
@@ -101,14 +109,20 @@ ul {
 }
 
 /* page-contacts */
+.page-contacts {
+  display: flex;
+  margin-left: auto;
+}
+.page-contacts .page-contacts-list + .page-contacts-list {
+  margin-left: 50px;
+}
+
 .page-contacts .link {
-  display: inline-block;
   color: var(--primary-text-color);
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  padding: 32px 0;
 }
 
 .page-contacts .link:hover,
@@ -123,17 +137,20 @@ ul {
   text-align: center;
 }
 .hero-title {
+  padding-top: 200px;
+  padding-bottom: 30px;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  padding-top: 200px;
-  padding-bottom: 30px;
 }
 
 .button-style-hero {
   display: inline-block;
+  min-width: 200px;
+  margin-bottom: 200px;
+  padding: 10px 32px;
   background-color: var(--accent-color);
   color: var(--seconadry-accent-color);
   font-family: inherit;
@@ -142,9 +159,6 @@ ul {
   line-height: 1.87;
   letter-spacing: 0.06em;
   text-align: center;
-  min-width: 200px;
-  margin-bottom: 200px;
-  padding: 10px 32px;
 }
 .button-style-hero:hover,
 .button-style-hero:focus {
@@ -156,13 +170,13 @@ ul {
 
 .section-title {
   color: var(--secondary-text-color);
-  font-weight: bold;
+  font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
 }
 
 .section-title.description {
-  font-weight: bold;
+  font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
@@ -195,7 +209,7 @@ ul {
 .footer-logo {
   color: var(--footer-primary-color);
   font-family: Raleway;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
 }
@@ -227,7 +241,7 @@ ul {
   color: var(--seconadry-accent-color);
 }
 .section-title.filter-variations {
-  font-weight: bold;
+  font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
