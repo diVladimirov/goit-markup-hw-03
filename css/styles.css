@@ -85,6 +85,9 @@ ul {
 
 /* PAGE-NAV */
 .page-nav .link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
   color: var(--secondary-text-color);
   font-weight: 500;
   font-size: 14px;
@@ -181,6 +184,12 @@ ul {
   line-height: 1.14;
   text-transform: uppercase;
 }
+
+.features-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 /* Our team */
 .section-title.name {
   font-weight: 500;
@@ -250,4 +259,30 @@ ul {
   color: var(--secondary-text-color);
   font-size: 16px;
   line-height: 1.87;
+}
+
+.filter-btn {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.filter-list {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: royalblue;
+}
+
+.filter-list-item {
+  width: 370px;
+  margin-right: 30px;
+  margin-bottom: 30px;
+  background-color: red;
+}
+
+.filter-list-item:nth-child(3n) {
+  margin-right: 0;
+}
+
+.filter-list-item:nth-last-child(-n + 3) {
+  margin-bottom: 0;
 }
